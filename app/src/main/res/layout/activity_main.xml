@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="15sp"
+    android:layout_marginRight="20sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblprincipal"
+        android:text="Ingrese sus datos"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtcorreo"
+        android:layout_marginTop="50dp"
+        android:hint="Correo Electronico"
+        android:textSize="30sp"
+        android:inputType="textPersonName"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtcontrasenia"
+        android:layout_marginTop="30dp"
+        android:hint="Contraseña"
+        android:textSize="30sp"
+
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/btnacceder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="onClick"
+        android:text="Iniciar Sesion"
+        android:textSize="20sp" />
+
+</LinearLayout>

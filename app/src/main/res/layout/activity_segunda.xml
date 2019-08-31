@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="30sp"
+    tools:context=".SegundaActivity">
+
+    <TextView
+        android:id="@+id/lblprincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Ingrese su fruta favorita"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtfruta"
+        android:layout_marginTop="10dp"
+        android:hint="Manzana"
+        android:textSize="30dp"
+
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/lblanimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="digite su animal preferido"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtanimal"
+        android:layout_marginTop="10dp"
+        android:hint="Leon"
+        android:textSize="30dp"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbllenguaje"
+        android:text="Digite lenguaje de programacion"
+        android:textSize="25dp"
+        android:layout_marginTop="10sp"
+        android:textAlignment="center"
+        />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlenguaje"
+        android:layout_marginTop="10dp"
+        android:hint="Java"
+        android:textSize="30dp"
+        android:inputType="textPersonName"
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Procesar"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnprocesar"
+
+        />
+
+</LinearLayout>
